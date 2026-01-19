@@ -7,34 +7,48 @@ import Ellipse from './Ellipse'
 
 const Hero = () => {
   const ellipseRef = useRotatingAnimation()
-  const role = useRoleSwitcher({ roles: ['FULLSTACK DEVELOPER', 'INDIE HACKER', 'SOLOPRENEUR'] })
+  const role = useRoleSwitcher({ roles: ['ANDROID DEVELOPER'] })
 
   return (
     <section className="bg-primary bg-small-glow bg-small-glow-position md:bg-large-glow-position lg:bg-large-glow min-h-[calc(dvh-4rem)] bg-no-repeat">
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-4 px-4 pt-12 pb-10 md:grid-cols-2 lg:p-4">
         <div className="flex min-h-48 flex-col justify-between lg:min-h-56 lg:max-w-[33.75rem]">
           <h1>
-            <span className="text-neutral mb-2 block text-3xl font-bold">Hi - I'm John Doe</span>
+            <span className="text-neutral mb-2 block text-3xl font-bold">Hi - I'm Rohan Tewari</span>
             <span className="text-accent block text-[1.75rem] font-bold">{role}</span>
           </h1>
 
           <h2 className="text-neutral mt-3">
-            Crafting innovative solutions to solve real-world problems
+            Android Developer building scalable mobile experiences.
+I specialize in Kotlin and Jetpack Compose, crafting clean, performant Android apps backed by robust Spring Boot services. From privacy-focused location tracking to cloud-connected full-stack applications, I turn complex problems into reliable, user-centric solutions.
           </h2>
 
           <div className="mt-6 flex flex-wrap gap-6">
             <a
-              href="#"
+              href="#contact"
               aria-label="Connect with me"
               className="bg-accent min-w-32 cursor-pointer rounded-lg px-[14px] py-[10px] text-center text-sm font-medium text-[#00071E]">
               Hire Me
             </a>
+
             <a
-              href="#"
+              href="https://drive.google.com/file/d/1p_0i37e8oq9aA2c-bl0cKNGVPMJjnYC4/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View LinkedIn Profile"
+              className="text-neutral bg-secondary cursor-pointer rounded-lg px-[14px] py-[10px] text-sm">
+              My Resume
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/rohantewari/"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="View LinkedIn Profile"
               className="text-neutral bg-secondary cursor-pointer rounded-lg px-[14px] py-[10px] text-sm">
               LinkedIn Profile
             </a>
+            
           </div>
         </div>
 
