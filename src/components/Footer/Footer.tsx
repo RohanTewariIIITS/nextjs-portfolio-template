@@ -9,17 +9,17 @@ const Footer = () => {
         <div>
           <h5 className="mb-8 flex items-center gap-2">
             <Logo width={30} height={24} />
-            <span className="text-neutral text-lg font-medium">Logoipsum</span>
+            <span className="text-neutral text-lg font-medium">Rohan Tewari</span>
           </h5>
           <p className="text-tertiary-content">
-            The first free end-to-end analytics service for the site, designed to work with
-            enterprises of various levels and business segments.
+            Building Android apps with care for performance, usability, and real-world constraints.
+Curious by nature, learning continuously, and enjoying the process of turning ideas into working software.
           </p>
-          <a
+          {/* <a
             href="#"
             className="text-neutral mt-4 inline-flex items-center gap-2 text-xs hover:underline">
             More about us <span className="bg-neutral inline-block size-[10px] rounded-full" />
-          </a>
+          </a> */}
         </div>
 
         <div className="flex flex-wrap gap-8">
@@ -41,6 +41,8 @@ const Footer = () => {
               <li key={index} className="cursor-pointer bg-transparent">
                 <a
                   href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-neutral transition-color hover:text-neutral/50 h-full w-full duration-300">
                   {item.icon}
                 </a>
@@ -48,7 +50,7 @@ const Footer = () => {
             ))}
           </ul>
           <p className="text-tertiary-content flex flex-col self-end text-right text-xs md:text-center">
-            <span>© 2025 — Copyright</span>
+            <span>© 2026 — Copyright</span>
             <span>All Rights reserved</span>
           </p>
         </div>
@@ -58,24 +60,24 @@ const Footer = () => {
             <div className="flex flex-col">
               <h5 className="text-neutral mb-4 text-lg font-medium">Contact Us</h5>
               <a
-                href="mailto:johndoe@gmail.com"
+                href="mailto:rohantewari2023@gmail.com"
                 className="text-tertiary-content hover:text-neutral text-sm font-light transition-colors duration-300">
-                johndoe@gmail.com
+                rohantewari2023@gmail.com
               </a>
-              <a
+              {/* <a
                 href="tel:+92 3123456789"
                 className="text-tertiary-content hover:text-neutral text-sm font-light transition-colors duration-300">
                 +92 3123456789
-              </a>
+              </a> */}
             </div>
             <div>
-              <div>
+              {/* <div>
                 <h5 className="text-neutral mb-4 text-lg font-medium">Location</h5>
                 <address className="text-tertiary-content flex flex-col text-sm font-light">
                   <span>123456, Pakistan</span>
                   <span>Karachi 22/5/8, Office 4</span>
                 </address>
-              </div>
+              </div> */}
             </div>
           </div>
 

@@ -14,6 +14,27 @@ import TailwindCSS from '../assets/icons/tailwind-css.svg'
 import Timer from '../assets/icons/timer.svg'
 import TypescriptIcon from '../assets/icons/typescript.svg'
 
+import AndroidStudioIcon from '../assets/icons/android-studio-icon.svg'
+import CSharpIcon from '../assets/icons/c-sharp-programming-language-icon.svg'
+import CIcon from '../assets/icons/c-program-icon.svg'
+import CPlusPlusIcon from '../assets/icons/c-plus-plus-programming-language-icon.svg'
+import FirebaseIcon from '../assets/icons/google-firebase-icon.svg'
+import GitIcon from '../assets/icons/git-icon.svg'
+import GithubWhiteIcon from '../assets/icons/github-white-icon.svg'
+import GoogleCloudIcon from '../assets/icons/google-cloud-icon.svg'
+import GoogleMaterialDesignIcon from '../assets/icons/google-material-design-icon.svg'
+import JetpackComposeIcon from '../assets/icons/jetpack compose icon_RGB.png'
+import KotlinIcon from '../assets/icons/kotlin-programming-language-icon.svg'
+import MongodbIcon from '../assets/icons/mongodb-icon.svg'
+import MysqlIcon from '../assets/icons/mysql-icon.svg'
+import RailwayIcon from '../assets/icons/railway-infrastructure-platform-icon.svg'
+import SpringBootIcon from '../assets/icons/spring-boot-icon.svg'
+import UnityIcon from '../assets/icons/unity-game-engine-icon.svg'
+import XmlCodeFileIcon from '../assets/icons/xml-code-file-icon.svg'
+
+
+import SqliteIcon from '../assets/icons/SQLite370.svg'
+
 const PreviewIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg
@@ -306,145 +327,145 @@ const PhoneIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
   )
 }
 
-const KotlinIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
-  return (
-    <svg
-      width="48"
-      height="48"
-      viewBox="0 0 48 48"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}>
-      <path
-        d="M0 0H24L0 24V0Z"
-        fill="url(#kotlin1)"
-      />
-      <path
-        d="M0 24L24 0H48L0 48V24Z"
-        fill="url(#kotlin2)"
-      />
-      <path
-        d="M24 0L0 24V48L48 0H24Z"
-        fill="url(#kotlin3)"
-      />
-      <defs>
-        <linearGradient id="kotlin1" x1="12" y1="0" x2="0" y2="12" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#E44857"/>
-          <stop offset="1" stopColor="#C711E1"/>
-        </linearGradient>
-        <linearGradient id="kotlin2" x1="36" y1="0" x2="0" y2="36" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#E44857"/>
-          <stop offset="1" stopColor="#C711E1"/>
-        </linearGradient>
-        <linearGradient id="kotlin3" x1="24" y1="0" x2="0" y2="48" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#E44857"/>
-          <stop offset="1" stopColor="#C711E1"/>
-        </linearGradient>
-      </defs>
-    </svg>
-  )
-}
+// const KotlinIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
+//   return (
+//     <svg
+//       width="48"
+//       height="48"
+//       viewBox="0 0 48 48"
+//       fill="none"
+//       xmlns="http://www.w3.org/2000/svg"
+//       {...props}>
+//       <path
+//         d="M0 0H24L0 24V0Z"
+//         fill="url(#kotlin1)"
+//       />
+//       <path
+//         d="M0 24L24 0H48L0 48V24Z"
+//         fill="url(#kotlin2)"
+//       />
+//       <path
+//         d="M24 0L0 24V48L48 0H24Z"
+//         fill="url(#kotlin3)"
+//       />
+//       <defs>
+//         <linearGradient id="kotlin1" x1="12" y1="0" x2="0" y2="12" gradientUnits="userSpaceOnUse">
+//           <stop stopColor="#E44857"/>
+//           <stop offset="1" stopColor="#C711E1"/>
+//         </linearGradient>
+//         <linearGradient id="kotlin2" x1="36" y1="0" x2="0" y2="36" gradientUnits="userSpaceOnUse">
+//           <stop stopColor="#E44857"/>
+//           <stop offset="1" stopColor="#C711E1"/>
+//         </linearGradient>
+//         <linearGradient id="kotlin3" x1="24" y1="0" x2="0" y2="48" gradientUnits="userSpaceOnUse">
+//           <stop stopColor="#E44857"/>
+//           <stop offset="1" stopColor="#C711E1"/>
+//         </linearGradient>
+//       </defs>
+//     </svg>
+//   )
+// }
 
-const AndroidIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
-  return (
-    <svg
-      width="48"
-      height="48"
-      viewBox="0 0 48 48"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}>
-      <path
-        d="M6 18C4.34 18 3 19.34 3 21V33C3 34.66 4.34 36 6 36C7.66 36 9 34.66 9 33V21C9 19.34 7.66 18 6 18ZM42 18C40.34 18 39 19.34 39 21V33C39 34.66 40.34 36 42 36C43.66 36 45 34.66 45 33V21C45 19.34 43.66 18 42 18ZM12 38C12 39.66 13.34 41 15 41H17V47C17 48.66 18.34 50 20 50C21.66 50 23 48.66 23 47V41H25V47C25 48.66 26.34 50 28 50C29.66 50 31 48.66 31 47V41H33C34.66 41 36 39.66 36 38V18H12V38ZM24 4C17.38 4 12 9.38 12 16H36C36 9.38 30.62 4 24 4ZM18 12C17.17 12 16.5 11.33 16.5 10.5C16.5 9.67 17.17 9 18 9C18.83 9 19.5 9.67 19.5 10.5C19.5 11.33 18.83 12 18 12ZM30 12C29.17 12 28.5 11.33 28.5 10.5C28.5 9.67 29.17 9 30 9C30.83 9 31.5 9.67 31.5 10.5C31.5 11.33 30.83 12 30 12Z"
-        fill="#3DDC84"
-      />
-    </svg>
-  )
-}
+// const AndroidIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
+//   return (
+//     <svg
+//       width="48"
+//       height="48"
+//       viewBox="0 0 48 48"
+//       fill="none"
+//       xmlns="http://www.w3.org/2000/svg"
+//       {...props}>
+//       <path
+//         d="M6 18C4.34 18 3 19.34 3 21V33C3 34.66 4.34 36 6 36C7.66 36 9 34.66 9 33V21C9 19.34 7.66 18 6 18ZM42 18C40.34 18 39 19.34 39 21V33C39 34.66 40.34 36 42 36C43.66 36 45 34.66 45 33V21C45 19.34 43.66 18 42 18ZM12 38C12 39.66 13.34 41 15 41H17V47C17 48.66 18.34 50 20 50C21.66 50 23 48.66 23 47V41H25V47C25 48.66 26.34 50 28 50C29.66 50 31 48.66 31 47V41H33C34.66 41 36 39.66 36 38V18H12V38ZM24 4C17.38 4 12 9.38 12 16H36C36 9.38 30.62 4 24 4ZM18 12C17.17 12 16.5 11.33 16.5 10.5C16.5 9.67 17.17 9 18 9C18.83 9 19.5 9.67 19.5 10.5C19.5 11.33 18.83 12 18 12ZM30 12C29.17 12 28.5 11.33 28.5 10.5C28.5 9.67 29.17 9 30 9C30.83 9 31.5 9.67 31.5 10.5C31.5 11.33 30.83 12 30 12Z"
+//         fill="#3DDC84"
+//       />
+//     </svg>
+//   )
+// }
 
-const JetpackComposeIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
-  return (
-    <svg
-      width="48"
-      height="48"
-      viewBox="0 0 48 48"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}>
-      <path
-        d="M24 4L4 14V34L24 44L44 34V14L24 4Z"
-        fill="#4285F4"
-      />
-      <path
-        d="M24 4L4 14L24 24L44 14L24 4Z"
-        fill="#669DF6"
-      />
-      <path
-        d="M24 24V44L44 34V14L24 24Z"
-        fill="#1A73E8"
-      />
-    </svg>
-  )
-}
+// const JetpackComposeIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
+//   return (
+//     <svg
+//       width="48"
+//       height="48"
+//       viewBox="0 0 48 48"
+//       fill="none"
+//       xmlns="http://www.w3.org/2000/svg"
+//       {...props}>
+//       <path
+//         d="M24 4L4 14V34L24 44L44 34V14L24 4Z"
+//         fill="#4285F4"
+//       />
+//       <path
+//         d="M24 4L4 14L24 24L44 14L24 4Z"
+//         fill="#669DF6"
+//       />
+//       <path
+//         d="M24 24V44L44 34V14L24 24Z"
+//         fill="#1A73E8"
+//       />
+//     </svg>
+//   )
+// }
 
-const FirebaseIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
-  return (
-    <svg
-      width="48"
-      height="48"
-      viewBox="0 0 48 48"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}>
-      <path
-        d="M8 38L11.41 6.27C11.5 5.44 12.57 5.11 13.11 5.74L17.16 10.5L23.3 0.53C23.63 -0.02 24.37 -0.02 24.7 0.53L40 38H8Z"
-        fill="#FFA000"
-      />
-      <path
-        d="M25.54 22.89L21.02 14.36L8 38L25.54 22.89Z"
-        fill="#F57C00"
-      />
-      <path
-        d="M40 38L35.14 8.58C35.03 7.87 34.19 7.56 33.65 8.03L8 38L22.91 46.64C23.58 47.04 24.42 47.04 25.09 46.64L40 38Z"
-        fill="#FFCA28"
-      />
-    </svg>
-  )
-}
+// const FirebaseIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
+//   return (
+//     <svg
+//       width="48"
+//       height="48"
+//       viewBox="0 0 48 48"
+//       fill="none"
+//       xmlns="http://www.w3.org/2000/svg"
+//       {...props}>
+//       <path
+//         d="M8 38L11.41 6.27C11.5 5.44 12.57 5.11 13.11 5.74L17.16 10.5L23.3 0.53C23.63 -0.02 24.37 -0.02 24.7 0.53L40 38H8Z"
+//         fill="#FFA000"
+//       />
+//       <path
+//         d="M25.54 22.89L21.02 14.36L8 38L25.54 22.89Z"
+//         fill="#F57C00"
+//       />
+//       <path
+//         d="M40 38L35.14 8.58C35.03 7.87 34.19 7.56 33.65 8.03L8 38L22.91 46.64C23.58 47.04 24.42 47.04 25.09 46.64L40 38Z"
+//         fill="#FFCA28"
+//       />
+//     </svg>
+//   )
+// }
 
-const SpringBootIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
-  return (
-    <svg
-      width="48"
-      height="48"
-      viewBox="0 0 48 48"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}>
-      <path
-        d="M42.6 8.4C38.1 3.3 31.4 0 24 0C10.7 0 0 10.7 0 24C0 37.3 10.7 48 24 48C37.3 48 48 37.3 48 24C48 18.3 46 13.1 42.6 8.4ZM35.1 35.6C34.8 36 34.3 36.2 33.8 36.2C33.5 36.2 33.1 36.1 32.8 35.9C28.5 33.3 23.1 32 17.5 32.2C16.8 32.2 16.2 31.7 16.1 31C16 30.3 16.5 29.6 17.2 29.5C23.4 29.3 29.4 30.7 34.2 33.6C34.8 34 35 34.8 35.1 35.6Z"
-        fill="#6DB33F"
-      />
-    </svg>
-  )
-}
+// const SpringBootIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
+//   return (
+//     <svg
+//       width="48"
+//       height="48"
+//       viewBox="0 0 48 48"
+//       fill="none"
+//       xmlns="http://www.w3.org/2000/svg"
+//       {...props}>
+//       <path
+//         d="M42.6 8.4C38.1 3.3 31.4 0 24 0C10.7 0 0 10.7 0 24C0 37.3 10.7 48 24 48C37.3 48 48 37.3 48 24C48 18.3 46 13.1 42.6 8.4ZM35.1 35.6C34.8 36 34.3 36.2 33.8 36.2C33.5 36.2 33.1 36.1 32.8 35.9C28.5 33.3 23.1 32 17.5 32.2C16.8 32.2 16.2 31.7 16.1 31C16 30.3 16.5 29.6 17.2 29.5C23.4 29.3 29.4 30.7 34.2 33.6C34.8 34 35 34.8 35.1 35.6Z"
+//         fill="#6DB33F"
+//       />
+//     </svg>
+//   )
+// }
 
-const GitIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
-  return (
-    <svg
-      width="48"
-      height="48"
-      viewBox="0 0 48 48"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}>
-      <path
-        d="M46.9 22.1L25.9 1.1C24.9 0.1 23.1 0.1 22.1 1.1L17.4 5.8L23.3 11.7C24.4 11.3 25.7 11.5 26.6 12.4C27.5 13.3 27.7 14.6 27.3 15.7L33 21.4C34.1 21 35.4 21.2 36.3 22.1C37.5 23.3 37.5 25.3 36.3 26.5C35.1 27.7 33.1 27.7 31.9 26.5C30.9 25.5 30.7 24.1 31.2 22.9L25.9 17.6V32.4C26.2 32.6 26.5 32.8 26.8 33.1C28 34.3 28 36.3 26.8 37.5C25.6 38.7 23.6 38.7 22.4 37.5C21.2 36.3 21.2 34.3 22.4 33.1C22.8 32.7 23.2 32.5 23.6 32.3V17.4C23.2 17.2 22.8 17 22.4 16.6C21.4 15.6 21.2 14.2 21.7 13L15.9 7.2L1.1 22.1C0.1 23.1 0.1 24.9 1.1 25.9L22.1 46.9C23.1 47.9 24.9 47.9 25.9 46.9L46.9 25.9C47.9 24.9 47.9 23.1 46.9 22.1Z"
-        fill="#F05032"
-      />
-    </svg>
-  )
-}
+// const GitIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
+//   return (
+//     <svg
+//       width="48"
+//       height="48"
+//       viewBox="0 0 48 48"
+//       fill="none"
+//       xmlns="http://www.w3.org/2000/svg"
+//       {...props}>
+//       <path
+//         d="M46.9 22.1L25.9 1.1C24.9 0.1 23.1 0.1 22.1 1.1L17.4 5.8L23.3 11.7C24.4 11.3 25.7 11.5 26.6 12.4C27.5 13.3 27.7 14.6 27.3 15.7L33 21.4C34.1 21 35.4 21.2 36.3 22.1C37.5 23.3 37.5 25.3 36.3 26.5C35.1 27.7 33.1 27.7 31.9 26.5C30.9 25.5 30.7 24.1 31.2 22.9L25.9 17.6V32.4C26.2 32.6 26.5 32.8 26.8 33.1C28 34.3 28 36.3 26.8 37.5C25.6 38.7 23.6 38.7 22.4 37.5C21.2 36.3 21.2 34.3 22.4 33.1C22.8 32.7 23.2 32.5 23.6 32.3V17.4C23.2 17.2 22.8 17 22.4 16.6C21.4 15.6 21.2 14.2 21.7 13L15.9 7.2L1.1 22.1C0.1 23.1 0.1 24.9 1.1 25.9L22.1 46.9C23.1 47.9 24.9 47.9 25.9 46.9L46.9 25.9C47.9 24.9 47.9 23.1 46.9 22.1Z"
+//         fill="#F05032"
+//       />
+//     </svg>
+//   )
+// }
 
 const JavaIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
@@ -475,23 +496,23 @@ const JavaIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
   )
 }
 
-const SQLiteIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
-  return (
-    <svg
-      width="48"
-      height="48"
-      viewBox="0 0 48 48"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}>
-      <path
-        d="M24 4C12.95 4 4 8.95 4 15V33C4 39.05 12.95 44 24 44C35.05 44 44 39.05 44 33V15C44 8.95 35.05 4 24 4Z"
-        fill="#003B57"
-      />
-      <ellipse cx="24" cy="15" rx="20" ry="7" fill="#0F80CC"/>
-    </svg>
-  )
-}
+// const SQLiteIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
+//   return (
+//     <svg
+//       width="48"
+//       height="48"
+//       viewBox="0 0 48 48"
+//       fill="none"
+//       xmlns="http://www.w3.org/2000/svg"
+//       {...props}>
+//       <path
+//         d="M24 4C12.95 4 4 8.95 4 15V33C4 39.05 12.95 44 24 44C35.05 44 44 39.05 44 33V15C44 8.95 35.05 4 24 4Z"
+//         fill="#003B57"
+//       />
+//       <ellipse cx="24" cy="15" rx="20" ry="7" fill="#0F80CC"/>
+//     </svg>
+//   )
+// }
 
 export {
   ArrowLeftIcon,
@@ -523,12 +544,22 @@ export {
   Timer,
   TypescriptIcon,
   X,
-  AndroidIcon,
+  AndroidStudioIcon,
+  CSharpIcon,
+  CIcon,
+  CPlusPlusIcon,
   FirebaseIcon,
   GitIcon,
-  JavaIcon,
+  GithubWhiteIcon,
+  GoogleCloudIcon,
+  GoogleMaterialDesignIcon,
   JetpackComposeIcon,
   KotlinIcon,
+  MongodbIcon,
+  MysqlIcon,
+  RailwayIcon,
   SpringBootIcon,
-  SQLiteIcon,
+  UnityIcon,
+  XmlCodeFileIcon,
+  SqliteIcon,
 }

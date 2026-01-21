@@ -1,11 +1,11 @@
 {
   "priority": 3,
-  "title": "Project Epsilon",
-  "shortDescription": "A collection of engaging coding challenges designed to help developers improve their ReactJS skills by writing functional business logic. Your task is to make it functional by writing business logic, to improve your frontend skills",
-  "cover": "https://res.cloudinary.com/dyvkdwzcj/image/upload/v1656971294/waitlist-template_qr4l9k.png",
-  "type": "Free 🔥",
-  "livePreview": "https://example.com/epsilon",
-  "githubLink": "https://github.com/example/ReactJS-Coding-Challenges",
-  "githubStars": "40 Stars",
-  "numberOfSales": "138 Sales"
+  "title": "Notes App -- Full-stack Mobile Application",
+  "shortDescription": "A full-stack cloud-connected notes application with real-time updates and secure CRUD operations. Built with Kotlin (Jetpack Compose), Spring Boot, MongoDB Atlas, Retrofit, Railway. Features REST APIs, sorting, copy-to-clipboard, dialogs, contextual menus, and cloud deployment.",
+  "cover": "https://user-images.githubusercontent.com/placeholder/notes-app-cover.png",
+  "type": "Mobile App",
+  "livePreview": "https://notes-app-backend-production-4644.up.railway.app",
+  "githubLink": "https://github.com/RohanTewariIIITS/notes-app-backend",
+  "githubStars": "",
+  "numberOfSales": ""
 }

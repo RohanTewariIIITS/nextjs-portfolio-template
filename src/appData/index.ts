@@ -9,6 +9,24 @@ import {
   SocketIcon,
   TailwindCSS,
   TypescriptIcon,
+  AndroidStudioIcon,
+  CSharpIcon,
+  CIcon,
+  CPlusPlusIcon,
+  FirebaseIcon,
+  GitIcon,
+  GithubWhiteIcon,
+  GoogleCloudIcon,
+  GoogleMaterialDesignIcon,
+  JetpackComposeIcon,
+  KotlinIcon,
+  MongodbIcon,
+  MysqlIcon,
+  RailwayIcon,
+  SpringBootIcon,
+  UnityIcon,
+  XmlCodeFileIcon,
+  SqliteIcon,
 } from '../utils/icons'
 
 // Project Data
@@ -66,85 +84,183 @@ export const projects = [
 ]
 
 // Service Data
+// export const serviceData = [
+//   {
+//     icon: JavaScriptIcon,
+//     title: 'JavaScript Development',
+//     shortDescription: 'Creating dynamic and interactive web applications using JavaScript.',
+//   },
+//   {
+//     icon: ReactIcon,
+//     title: 'React.js Development',
+//     shortDescription: 'Building modern and responsive user interfaces with React.js.',
+//   },
+//   {
+//     icon: NodejsIcon,
+//     title: 'Node.js Backend',
+//     shortDescription: 'Developing scalable server-side applications using Node.js.',
+//   },
+//   {
+//     icon: NextjsIcon,
+//     title: 'Next.js Development',
+//     shortDescription: 'Creating server-rendered React applications with Next.js.',
+//   },
+//   {
+//     icon: TypescriptIcon,
+//     title: 'TypeScript Development',
+//     shortDescription: 'Ensuring robust and maintainable code with TypeScript.',
+//   },
+//   {
+//     icon: TailwindCSS,
+//     title: 'Tailwind CSS Styling',
+//     shortDescription: 'Designing beautiful and responsive interfaces with Tailwind CSS.',
+//   },
+// ]
+
 export const serviceData = [
   {
-    icon: JavaScriptIcon,
-    title: 'JavaScript Development',
-    shortDescription: 'Creating dynamic and interactive web applications using JavaScript.',
+    icon: AndroidStudioIcon,
+    title: 'Android Studio',
+    shortDescription:
+      'End-to-end Android application development using Android Studio, focusing on performance, usability, and scalability.',
   },
   {
-    icon: ReactIcon,
-    title: 'React.js Development',
-    shortDescription: 'Building modern and responsive user interfaces with React.js.',
+    icon: KotlinIcon,
+    title: 'Kotlin',
+    shortDescription:
+      'Developing modern Android applications using Kotlin with clean, concise, and maintainable code practices.',
   },
   {
-    icon: NodejsIcon,
-    title: 'Node.js Backend',
-    shortDescription: 'Developing scalable server-side applications using Node.js.',
+    icon: JetpackComposeIcon,
+    title: 'Jetpack Compose',
+    shortDescription:
+      'Building declarative, responsive Android UIs using Jetpack Compose and modern UI patterns.',
   },
   {
-    icon: NextjsIcon,
-    title: 'Next.js Development',
-    shortDescription: 'Creating server-rendered React applications with Next.js.',
+    icon: GoogleMaterialDesignIcon,
+    title: 'Material Design 3',
+    shortDescription:
+      'Implementing Material Design principles to create intuitive, accessible, and visually consistent Android apps.',
   },
   {
-    icon: TypescriptIcon,
-    title: 'TypeScript Development',
-    shortDescription: 'Ensuring robust and maintainable code with TypeScript.',
+    icon: XmlCodeFileIcon,
+    title: 'XML',
+    shortDescription:
+      'Working with XML layouts for legacy Android systems and hybrid UI architectures alongside Compose.',
   },
   {
-    icon: TailwindCSS,
-    title: 'Tailwind CSS Styling',
-    shortDescription: 'Designing beautiful and responsive interfaces with Tailwind CSS.',
+    icon: SpringBootIcon,
+    title: 'Spring Boot',
+    shortDescription:
+      'Designing and developing backend services using Spring Boot for mobile and web clients.',
+  },
+  {
+    icon: FirebaseIcon,
+    title: 'Firebase',
+    shortDescription:
+      'Integrating Firebase services such as authentication, real-time data, and cloud messaging into Android apps.',
+  },
+  {
+    icon: GoogleCloudIcon,
+    title: 'Google Cloud Services',
+    shortDescription:
+      'Deploying and managing backend services using Google Cloud for scalability and reliability.',
+  },
+  {
+    icon: MongodbIcon,
+    title: 'MongoDB',
+    shortDescription:
+      'Designing flexible and scalable data models using MongoDB for backend-driven applications.',
+  },
+  {
+    icon: MysqlIcon,
+    title: 'MySQL',
+    shortDescription:
+      'Managing structured data using MySQL with optimized queries and schema design.',
+  },
+  {
+    icon: SqliteIcon,
+    title: 'SQLite',
+    shortDescription:
+      'Implementing offline-first functionality using SQLite for reliable local data persistence in Android Apps.',
+  },
+  {
+    icon: RailwayIcon,
+    title: 'Railway',
+    shortDescription:
+      'Deploying and managing backend applications using Railway with environment-based configuration.',
+  },
+  {
+    icon: GitIcon,
+    title: 'Git',
+    shortDescription:
+      'Using Git for version control, feature branching, and collaborative development workflows.',
+  },
+  {
+    icon: GithubWhiteIcon,
+    title: 'GitHub',
+    shortDescription:
+      'Collaborating on projects using GitHub for code reviews, issue tracking, and open-source contributions.',
+  },
+  {
+    icon: CIcon,
+    title: 'C',
+    shortDescription:
+      'Applying foundational programming concepts using C.',
+  },
+  {
+    icon: CPlusPlusIcon,
+    title: 'C++',
+    shortDescription:
+      'Solving algorithmic and performance-oriented problems using C++ and object-oriented principles.',
+  },
+  {
+    icon: CSharpIcon,
+    title: 'C#',
+    shortDescription:
+      'Building game logic for unity engine using C#',
+  },
+  {
+    icon: UnityIcon,
+    title: 'Unity',
+    shortDescription:
+      'Exploring game development since childhood—building small games in Unity, experimenting with mechanics, and learning by breaking and improving things over time',
   },
 ]
 
+
 // Skill List
 export const skillList = [
-  {
-    name: 'JavaScript',
-    icon: JavaScriptIcon,
-  },
-  {
-    name: 'TypeScript',
-    icon: TypescriptIcon,
-  },
-  {
-    name: 'React.js',
-    icon: ReactIcon,
-  },
-  {
-    name: 'Next.js',
-    icon: NextjsIcon,
-  },
-  {
-    name: 'Node.js',
-    icon: NodejsIcon,
-  },
-  {
-    name: 'Express.js',
-    icon: ExpressjsIcon,
-  },
-  {
-    name: 'Nest.js',
-    icon: NestjsIcon,
-  },
-  {
-    name: 'Socket.io',
-    icon: SocketIcon,
-  },
+  { name: 'Android Studio', icon: AndroidStudioIcon },
+  { name: 'C#', icon: CSharpIcon },
+  { name: 'C', icon: CIcon },
+  { name: 'C++', icon: CPlusPlusIcon },
+  { name: 'Firebase', icon: FirebaseIcon },
+  { name: 'Git', icon: GitIcon },
+  { name: 'GitHub', icon: GithubWhiteIcon },
+  { name: 'Google Cloud', icon: GoogleCloudIcon },
+  { name: 'Material Design', icon: GoogleMaterialDesignIcon },
+  { name: 'Jetpack Compose', icon: JetpackComposeIcon },
+  { name: 'Kotlin', icon: KotlinIcon },
+  { name: 'MongoDB', icon: MongodbIcon },
+  { name: 'MySQL', icon: MysqlIcon },
+  { name: 'Railway', icon: RailwayIcon },
+  { name: 'Spring Boot', icon: SpringBootIcon },
+  { name: 'Unity', icon: UnityIcon },
+  { name: 'XML Code File', icon: XmlCodeFileIcon },
+  { name: 'SQLite', icon: SqliteIcon },
 ]
 
 export const footerLinks = [
   { title: 'About', href: '#' },
   { title: 'Projects', href: '#projects' },
   { title: 'Testimonials', href: '#testimonials' },
+  // {
+  //   title: 'Blogs',
+  //   href: '#blogs',
+  // },
   {
-    title: 'Blogs',
-    href: '#blogs',
-  },
-  {
-    title: 'Services',
+    title: 'Skills',
     href: '#services',
   },
   {
