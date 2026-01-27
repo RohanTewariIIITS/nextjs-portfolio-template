@@ -58,7 +58,7 @@ Curious by nature, learning continuously, and enjoying the process of turning id
         <div className="flex flex-col justify-between gap-[200px] md:flex-row md:gap-8">
           <div className="space-y-10 md:self-end">
             <div className="flex flex-col">
-              <h5 className="text-neutral mb-4 text-lg font-medium">Contact Us</h5>
+              <h5 className="text-neutral mb-4 text-lg font-medium">Contact Me</h5>
               <a
                 href="mailto:rohantewari2023@gmail.com"
                 className="text-tertiary-content hover:text-neutral text-sm font-light transition-colors duration-300">
