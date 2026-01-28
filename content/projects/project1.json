@@ -1,9 +1,9 @@
 {
   "priority": 1,
-  "title": "Project Placeholder",
-  "shortDescription": "Project details coming soon.",
+  "title": "PM POSHAN MDM Ledger – Offline-first Compliance App",
+  "shortDescription": "Offline-first Android app digitizing Mid-Day Meal (MDM) records for PM POSHAN/MDCF compliance. Features calendar-based data entry, audit-safe Room database, and automated PDF report generation.",
   "cover": "https://user-images.githubusercontent.com/placeholder/project1-cover.png",
   "livePreview": "",
-  "type": "",
-  "siteAge": ""
+  "type": "Android App",
+  "siteAge": "Jan 2026"
 }
