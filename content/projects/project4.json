@@ -1,11 +1,11 @@
 {
-  "priority": 4,
+  "priority": 2,
   "title": "Offline Bus Tracking App",
   "shortDescription": "An offline-first bus tracking app that estimates real-time bus location using nearby cell towers, with optional GPS-based tracking and privacy-friendly data handling. Built with Kotlin (Jetpack Compose), Foreground Services, Location & Telephony APIs, Python, RoomDB.",
   "cover": "https://camo.githubusercontent.com/2d6875930bc3b327462836543149ddc507a5ee0b2b705eeb5dc04c6988f4ccc3/68747470733a2f2f692e706f7374696d672e63632f686857647930715a2f53637265656e73686f742d323032362d30312d31312d3232333332352e706e67",
-  "type": "Mobile App",
+  "type": "Android App",
   "livePreview": "https://drive.google.com/file/d/11J7U6uBo3CVTBF8ThX2rB4mm1T9HtNis/view?usp=sharing",
-  "siteAge": "Dec 2025",
+  "siteAge": "December 2025",
   "visitors": "N/A",
   "githubLink": "https://github.com/RohanTewariIIITS/hack-the-winter-swastik-hitho-bus",
   "earned": ""

@@ -4,6 +4,7 @@
   "shortDescription": "Offline-first Android app digitizing Mid-Day Meal (MDM) records for PM POSHAN/MDCF compliance. Features calendar-based data entry, audit-safe Room database, and automated PDF report generation.",
   "cover": "https://user-images.githubusercontent.com/placeholder/project1-cover.png",
   "livePreview": "",
+  "githubLink":"https://github.com/RohanTewariIIITS/mdm_reports_app",
   "type": "Android App",
-  "siteAge": "Jan 2026"
+  "siteAge": "January 2026"
 }

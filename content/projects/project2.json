@@ -1,9 +1,12 @@
 {
-  "priority": 2,
+  "priority": 4,
   "title": "Squeezr - Local Image Compression",
   "shortDescription": "Share images from any app, adjust scale and size locally, and save or reshare optimized results. Built with Kotlin, MVVM, WorkManager, Coroutines, Intents, and Coil for a smooth and reliable Android experience.",
   "cover": "https://user-images.githubusercontent.com/placeholder/squeezr-cover.png",
+  "type": "Android App",
+  "siteAge": "August 2025",
   "livePreview": "",
+  "githubLink":"",
   "visitors": "",
   "earned": ""
 }
