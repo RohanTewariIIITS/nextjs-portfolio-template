@@ -4,7 +4,7 @@
   "shortDescription": "A full-stack cloud-connected notes application with real-time updates and secure CRUD operations. Built with Kotlin (Jetpack Compose), Spring Boot, MongoDB Atlas, Retrofit, Railway. Features REST APIs, sorting, copy-to-clipboard, dialogs, contextual menus, and cloud deployment.",
   "cover": "https://user-images.githubusercontent.com/placeholder/notes-app-cover.png",
   "type": "Mobile App",
-  "livePreview": "https://notes-app-backend-production-4644.up.railway.app",
+  "livePreview": "",
   "githubLink": "https://github.com/RohanTewariIIITS/notes-app-backend",
   "githubStars": "",
   "numberOfSales": ""
