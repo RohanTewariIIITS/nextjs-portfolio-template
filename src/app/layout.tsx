@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title,
     description,
     url,
-    siteName: 'John Doe Portfolio',
+    siteName: 'Rohan Tewari\'s Portfolio',
     type: 'website',
   },
   twitter: {
