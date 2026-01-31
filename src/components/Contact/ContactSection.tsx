@@ -28,7 +28,7 @@ const ContactSection = () => {
             <LinkedIn /> Message on Linkedin
           </a>
           <a
-            href="https://x.com/messages/compose?recipient_id=RTdevdiary"
+            href="https://x.com/messages/compose?recipient_id=1958967080726011904"
             className="text-neutral hover:text-accent flex items-center gap-1 font-light transition-colors duration-300">
             <X /> Message on X
           </a>
