@@ -2,6 +2,7 @@ export interface Project {
   title: string
   shortDescription: string
   detailedDescription?: string
+  techStack?: string[]
   images?: string[]
   priority: number
   cover: string

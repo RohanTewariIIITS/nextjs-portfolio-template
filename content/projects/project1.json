@@ -2,14 +2,23 @@
   "priority": 1,
   "title": "PM POSHAN MDM Ledger – Offline-first Compliance App",
   "shortDescription": "Offline-first Android app digitizing Mid-Day Meal (MDM) records for PM POSHAN/MDCF compliance. Features calendar-based data entry, audit-safe Room database, and automated PDF report generation.",
-  "detailedDescription": "PM POSHAN MDM Ledger is a comprehensive offline-first Android application designed to digitize and streamline Mid-Day Meal record-keeping for schools under the PM POSHAN (Pradhan Mantri Poshan Shakti Nirman) scheme.\n\n**Key Features:**\n- 📅 Calendar-based intuitive data entry system\n- 💾 Audit-safe Room database for secure local storage\n- 📄 Automated PDF report generation for compliance\n- 🔄 Seamless offline-to-online sync capabilities\n- 📊 Dashboard with meal statistics and analytics\n- 🔐 Role-based access control for teachers and administrators\n\n**Technical Stack:**\n- Kotlin with Jetpack Compose for modern UI\n- Room Database for local persistence\n- WorkManager for background sync\n- iText library for PDF generation\n- Material Design 3 components",
+  
+  "techStack": ["Kotlin", "Jetpack Compose", "MVVM", "Room", "Coroutines", "Android PdfDocument", "Material 3"],
+  
+  "detailedDescription": "Built a `production-grade` Android application to digitize Mid-Day Meal record keeping for government schools that traditionally rely on handwritten registers. The app replaces manual logs with a fully `offline-first`, structured, and `audit-compliant` system, enabling schools to capture daily data and automatically generate official monthly reports.\n\n🚩 **What problem it solves**\nSchools manually maintain attendance, meal counts, food grain usage, and fund records on paper, which:\n- consumes hours every month\n- causes calculation mistakes\n- makes audits difficult\n- fails in low-internet rural areas\n\nThis app provides a reliable offline digital alternative that mirrors government formats exactly while `automating calculations` and reporting.\n\n🛠️ **My Contributions**\n- `Designed and developed` the entire app `end-to-end` (architecture, database, UI, reporting pipeline)\n- Implemented `offline-first` data entry workflows using calendar-based daily logs\n- `Engineered` a `normalized Room database schema` for audit-safe persistence (school profile, daily entries, funds, grains, metadata)\n- Built a `PDF generation engine` that aggregates monthly data into multi-page government-style registers\n- Added `automatic computations` for balances, totals, and expenditures to eliminate manual math errors\n- Developed manual compliance modules for inspections and monthly checks with `validations`\n- Designed a `Material 3 UI` optimized for low-end devices and high readability for non-technical users\n- Applied `MVVM` + `Coroutines` for clean `separation of concerns` and `scalable` code structure\n\n⚙️ **Technical Highlights**\n- `100% offline` functionality\n- Structured local database with `relational modeling`\n- `Background report generation`\n- Large-form data handling\n- `Production-focused UX` for rural environments\n\n📈 **Impact**\n- Reduces reporting time from `hours → minutes`\n- `Minimizes human errors`\n- Improves `audit readiness` and transparency\n- Demonstrates `real-world Android engineering` beyond CRUD apps",
+  
   "images": [
-    "https://drive.usercontent.google.com/download?id=1na4BxFFmjnx-sfp-X7qHwZjrXqJuBsJP&export=view"
+    "https://drive.usercontent.google.com/download?id=1na4BxFFmjnx-sfp-X7qHwZjrXqJuBsJP&export=view",
+    "https://drive.usercontent.google.com/download?id=15-kyxU_TRE3d95Hev6TKomNnyMFvBzoY&export=view",
+    "https://drive.usercontent.google.com/download?id=1nmKxFjY7_nnaQIt0FexBw0sKXKECF8vW&export=view",
+    "https://drive.usercontent.google.com/download?id=18I5vEtGAKQlmJ-uc2ELwPHAE-eGpCOZe&export=view",
+    "https://drive.usercontent.google.com/download?id=1lnjYwf1__fHbOeYHt8dl4xVWwJUNnVaK&export=view"
   ],
+  
   "cover": "https://drive.usercontent.google.com/download?id=1na4BxFFmjnx-sfp-X7qHwZjrXqJuBsJP&export=view",
   "livePreview": "",
   "githubLink": "https://github.com/RohanTewariIIITS/mdm_reports_app",
   "type": "Android App",
-  "siteAge": "January 2026 - present",
+  "siteAge": "January 2026 - Present",
   "ongoing": true
 }

@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 import { Project } from '@/lib/types'
-import Image from 'next/image'
 import { Earning, GithubIcon, Likes, PreviewIcon, Star, Timer } from '../../utils/icons'
 import ProjectModal from "./ProjectModal";
+import LoadingImage from "../UI/LoadingImage";
+import Image from 'next/image'
 
 const IconText: React.FC<{ icon: string; text: string }> = ({ icon, text }) => (
   <li className="flex gap-2">
@@ -24,6 +25,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
     title,
     shortDescription,
     detailedDescription,
+    techStack,
     images,
     visitors,
     earned,
@@ -72,11 +74,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
             </ul>
           </div>
           <figure className="flex flex-col items-end overflow-hidden">
-            <Image
+            <LoadingImage
               src={cover}
               width={150}
               height={80}
               alt="Project Cover"
+              containerClassName="h-[80px] w-[150px]"
               className="h-[80px] w-[150px] rounded-md object-cover shadow-[0px_1.66px_3.74px_-1.25px_#18274B1F]"
             />
             <span className="text-xs text-tertiary-content mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -120,6 +123,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
           title,
           shortDescription,
           detailedDescription,
+          techStack,
           images,
           cover,
           livePreview,

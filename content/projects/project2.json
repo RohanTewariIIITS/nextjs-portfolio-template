@@ -2,11 +2,20 @@
   "priority": 4,
   "title": "Squeezr - Local Image Compression",
   "shortDescription": "Share images from any app, adjust scale and size locally, and save or reshare optimized results. Built with Kotlin, MVVM, WorkManager, Coroutines, Intents, and Coil for a smooth and reliable Android experience.",
-  "cover": "https://user-images.githubusercontent.com/placeholder/squeezr-cover.png",
+  
+  "techStack": ["Kotlin", "MVVM", "WorkManager", "Coroutines", "Intents", "Coil", "Bitmap Processing", "Material Design"],
+  
+  "detailedDescription": "Built a lightweight, `privacy-focused` image compression utility that works entirely `on-device` without uploading images to any server. Users can share images from any app, adjust compression settings, and instantly save or reshare optimized versions - all with a smooth, `native Android` experience.\n\n🚩 **What problem it solves**\nUsers frequently need to compress images for:\n- Sharing on messaging apps with file size limits\n- Reducing storage usage on device\n- Faster uploads on slow connections\n- Email attachments with size restrictions\n\nMost compression tools are web-based (privacy concerns) or bloated with ads. Squeezr provides a fast, `ad-free`, `offline` solution that integrates seamlessly with Android's share system.\n\n🛠️ **My Contributions**\n- `Designed and developed` the complete application from scratch\n- Implemented `Android Share Intent` receiver for seamless integration with any app\n- Built `real-time preview` system showing compression results before saving\n- Created adjustable scale and quality controls with live file size estimation\n- Integrated `WorkManager` for `reliable background processing` of large images\n- Used `Coroutines` for `async image processing` without blocking the UI\n- Implemented `Coil` for `efficient image loading` and memory management\n- Built re-share functionality to instantly send compressed images to other apps\n- Applied `MVVM architecture` for clean, `testable` code structure\n- Designed intuitive UI following `Material Design` guidelines\n\n⚙️ **Technical Highlights**\n**Image Processing Pipeline:**\n- `Bitmap` manipulation with configurable quality and scale factors\n- `Efficient memory handling` to prevent OOM on large images\n- Real-time compression ratio and file size calculations\n- Support for multiple image formats (JPEG, PNG, WebP)\n\n**Android Integration:**\n- `Share Intent` receiver for incoming images from any app\n- `Share Intent` sender for re-sharing compressed results\n- `Content Provider` integration for secure file access\n- Proper `URI handling` for scoped storage compatibility\n\n**Background Processing:**\n- `WorkManager` for guaranteed task completion\n- `Coroutines` with proper `Dispatchers` for non-blocking operations\n- Progress tracking and cancellation support\n- `Lifecycle-aware` processing to prevent memory leaks\n\n**Performance & UX:**\n- `Coil` image loader with `caching` and `memory optimization`\n- Instant preview updates as settings change\n- Smooth animations and responsive controls\n- `Minimal APK size` for quick installation\n\n📈 **Impact**\n- `100% offline` - no data leaves the device\n- `Privacy-first` - no analytics or tracking\n- Demonstrates `Android system integration` skills (Intents, Content Providers)\n- Shows proficiency in `async programming` (Coroutines, WorkManager)\n- Clean `MVVM architecture` with proper separation of concerns\n- `Real-world utility` app solving everyday user problems",
+  
+  "cover": "https://drive.usercontent.google.com/download?id=1d2ctpDwAH4jLO_ZYCW7td3iJrn9fhPUm&export=view",
   "type": "Android App",
   "siteAge": "August 2025",
   "livePreview": "",
   "githubLink":"",
+  "images": [
+    "https://drive.usercontent.google.com/download?id=1XvA6qYgmR_qZx46iG9M38Kg_JfYxbknu&export=view",
+    "https://drive.usercontent.google.com/download?id=1d2ctpDwAH4jLO_ZYCW7td3iJrn9fhPUm&export=view"
+  ],
   "visitors": "",
   "earned": ""
 }

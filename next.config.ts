@@ -41,11 +41,18 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'user-images.githubusercontent.com',
       },
-    ],
-    domains: [
-      // Add your allowed domains here
-      'camo.githubusercontent.com',
-      'drive.usercontent.google.com',
+      {
+        protocol: 'https',
+        hostname: 'camo.githubusercontent.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.postimg.cc',
+      },
+      {
+        protocol: 'https',
+        hostname: 'drive.usercontent.google.com',
+      },
     ],
   },
 }

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, Loader2, ImageOff } from "lucide-react";
 import { GithubIcon, PreviewIcon } from '../../utils/icons'
 
 interface ProjectModalProps {
@@ -12,6 +12,7 @@ interface ProjectModalProps {
     title: string;
     shortDescription: string;
     detailedDescription?: string;
+    techStack?: string[];
     images?: string[];
     cover: string;
     livePreview?: string;
@@ -24,7 +25,12 @@ interface ProjectModalProps {
 
 export default function ProjectModal({ isOpen, onClose, project }: ProjectModalProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set());
+  const [errorImages, setErrorImages] = useState<Set<number>>(new Set());
   const images = project.images?.length ? project.images : [project.cover];
+
+  const isCurrentImageLoading = !loadedImages.has(currentImageIndex) && !errorImages.has(currentImageIndex);
+  const hasCurrentImageError = errorImages.has(currentImageIndex);
 
   useEffect(() => {
     if (isOpen) {
@@ -45,7 +51,24 @@ export default function ProjectModal({ isOpen, onClose, project }: ProjectModalP
     return () => window.removeEventListener("keydown", handleEscape);
   }, [onClose]);
 
+  // Reset loaded images when modal reopens with different project
+  useEffect(() => {
+    if (!isOpen) {
+      setLoadedImages(new Set());
+      setErrorImages(new Set());
+      setCurrentImageIndex(0);
+    }
+  }, [isOpen]);
+
   if (!isOpen) return null;
+
+  const handleImageLoad = () => {
+    setLoadedImages((prev) => new Set(prev).add(currentImageIndex));
+  };
+
+  const handleImageError = () => {
+    setErrorImages((prev) => new Set(prev).add(currentImageIndex));
+  };
 
   const nextImage = () => {
     setCurrentImageIndex((prev) => (prev + 1) % images.length);
@@ -99,7 +122,7 @@ export default function ProjectModal({ isOpen, onClose, project }: ProjectModalP
           </h2>
 
           {/* Action Buttons */}
-          <div className="flex gap-5 mb-6">
+          <div className="flex gap-5 mb-4">
             {project.livePreview && (
               <a
                 href={project.livePreview}
@@ -124,26 +147,79 @@ export default function ProjectModal({ isOpen, onClose, project }: ProjectModalP
             )}
           </div>
 
+          {/* Tech Stack Tags */}
+          {project.techStack && project.techStack.length > 0 && (
+            <div className="flex flex-wrap gap-2 mb-6">
+              {project.techStack.map((tech, idx) => (
+                <span
+                  key={idx}
+                  className="px-2.5 py-1 text-xs md:text-sm rounded-md bg-[#FFFFFF1A] text-accent backdrop-blur-[80px] font-medium"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          )}
+
           <div className="pr-2">
             {description.split("\n").map((paragraph, index) => {
+              // Helper function to render text with highlighted keywords (backticks)
+              const renderWithHighlights = (text: string) => {
+                const parts = text.split(/(`[^`]+`)/g);
+                return parts.map((part, i) => {
+                  if (part.startsWith('`') && part.endsWith('`')) {
+                    return (
+                      <span key={i} className="text-accent font-medium">
+                        {part.slice(1, -1)}
+                      </span>
+                    );
+                  }
+                  return part;
+                });
+              };
+
+              // Check if line starts with emoji + **heading** pattern (e.g., "💻 **Tech Stack:** content")
+              const headingWithContentMatch = paragraph.match(/^([^\*]*)\*\*([^*]+)\*\*(.*)$/);
+              
+              // Full line heading: starts with optional emoji and is fully wrapped in **
               if (paragraph.startsWith("**") && paragraph.endsWith("**")) {
                 return (
-                  <h3 key={index} className="text-base font-semibold text-secondary-content mt-4 mb-2">
+                  <h3 key={index} className="text-base font-bold text-secondary-content mt-5 mb-2 border-l-2 border-accent pl-3">
                     {paragraph.replace(/\*\*/g, "")}
                   </h3>
                 );
               }
+              
+              // Heading pattern like "🚩 **What problem it solves**" or "💻 **Tech Stack:** content"
+              if (headingWithContentMatch) {
+                const [, prefix, heading, rest] = headingWithContentMatch;
+                // If there's content after the heading, render as paragraph with bold heading
+                if (rest.trim()) {
+                  return (
+                    <p key={index} className="text-primary-content text-sm md:text-base mb-2 mt-5">
+                      {prefix}<span className="font-bold text-secondary-content">{heading}</span>{renderWithHighlights(rest)}
+                    </p>
+                  );
+                }
+                // Otherwise it's a standalone heading
+                return (
+                  <h3 key={index} className="text-base font-bold text-secondary-content mt-5 mb-2 border-l-2 border-accent pl-3">
+                    {prefix}{heading}
+                  </h3>
+                );
+              }
+              
               if (paragraph.startsWith("- ")) {
                 return (
                   <li key={index} className="text-primary-content ml-4 text-sm md:text-base">
-                    {paragraph.substring(2)}
+                    {renderWithHighlights(paragraph.substring(2))}
                   </li>
                 );
               }
               if (paragraph.trim() === "") return null;
               return (
                 <p key={index} className="text-primary-content text-sm md:text-base mb-2">
-                  {paragraph}
+                  {renderWithHighlights(paragraph)}
                 </p>
               );
             })}
@@ -154,13 +230,30 @@ export default function ProjectModal({ isOpen, onClose, project }: ProjectModalP
         <div className="flex-1 bg-primary flex flex-col items-center justify-center p-4 md:p-6 min-h-[300px] md:min-h-0">
           <div className="relative w-full h-[400px] md:h-[500px] flex items-center justify-center">
             <div className="relative w-full h-full max-w-[280px] md:max-w-[320px]">
-              <Image
-                src={images[currentImageIndex]}
-                alt={`${project.title} screenshot ${currentImageIndex + 1}`}
-                fill
-                className="object-contain rounded-lg"
-                sizes="(max-width: 768px) 280px, 320px"
-              />
+              {/* Loading Spinner */}
+              {isCurrentImageLoading && (
+                <div className="absolute inset-0 flex items-center justify-center bg-primary rounded-lg z-10">
+                  <Loader2 className="w-8 h-8 text-accent animate-spin" />
+                </div>
+              )}
+              {/* Error State */}
+              {hasCurrentImageError ? (
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-secondary rounded-lg z-10 gap-3">
+                  <ImageOff className="w-12 h-12 text-neutral" />
+                  <span className="text-neutral text-sm">Failed to load image</span>
+                </div>
+              ) : (
+                <Image
+                  key={currentImageIndex}
+                  src={images[currentImageIndex]}
+                  alt={`${project.title} screenshot ${currentImageIndex + 1}`}
+                  fill
+                  className={`object-contain rounded-lg transition-opacity duration-300 ${isCurrentImageLoading ? 'opacity-0' : 'opacity-100'}`}
+                  sizes="(max-width: 768px) 280px, 320px"
+                  onLoad={handleImageLoad}
+                  onError={handleImageError}
+                />
+              )}
             </div>
 
             {/* Navigation Arrows - Always visible */}
