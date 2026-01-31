@@ -20,6 +20,10 @@ const navItems = [
     href: '/#services',
   },
   {
+    label: '_education',
+    href: '/#education',
+  },
+  {
     label: '_contact-me',
     href: '/#contact',
   },

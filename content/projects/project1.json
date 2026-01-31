@@ -2,9 +2,14 @@
   "priority": 1,
   "title": "PM POSHAN MDM Ledger – Offline-first Compliance App",
   "shortDescription": "Offline-first Android app digitizing Mid-Day Meal (MDM) records for PM POSHAN/MDCF compliance. Features calendar-based data entry, audit-safe Room database, and automated PDF report generation.",
-  "cover": "https://user-images.githubusercontent.com/placeholder/project1-cover.png",
+  "detailedDescription": "PM POSHAN MDM Ledger is a comprehensive offline-first Android application designed to digitize and streamline Mid-Day Meal record-keeping for schools under the PM POSHAN (Pradhan Mantri Poshan Shakti Nirman) scheme.\n\n**Key Features:**\n- 📅 Calendar-based intuitive data entry system\n- 💾 Audit-safe Room database for secure local storage\n- 📄 Automated PDF report generation for compliance\n- 🔄 Seamless offline-to-online sync capabilities\n- 📊 Dashboard with meal statistics and analytics\n- 🔐 Role-based access control for teachers and administrators\n\n**Technical Stack:**\n- Kotlin with Jetpack Compose for modern UI\n- Room Database for local persistence\n- WorkManager for background sync\n- iText library for PDF generation\n- Material Design 3 components",
+  "images": [
+    "https://drive.usercontent.google.com/download?id=1na4BxFFmjnx-sfp-X7qHwZjrXqJuBsJP&export=view"
+  ],
+  "cover": "https://drive.usercontent.google.com/download?id=1na4BxFFmjnx-sfp-X7qHwZjrXqJuBsJP&export=view",
   "livePreview": "",
-  "githubLink":"https://github.com/RohanTewariIIITS/mdm_reports_app",
+  "githubLink": "https://github.com/RohanTewariIIITS/mdm_reports_app",
   "type": "Android App",
-  "siteAge": "January 2026"
+  "siteAge": "January 2026 - present",
+  "ongoing": true
 }

@@ -1,6 +1,8 @@
 export interface Project {
   title: string
   shortDescription: string
+  detailedDescription?: string
+  images?: string[]
   priority: number
   cover: string
   livePreview?: string
@@ -12,6 +14,7 @@ export interface Project {
   numberOfSales?: string
   type: string
   siteAge?: string
+  ongoing?: boolean
 }
 
 export interface Heading {
